@@ -1,6 +1,0 @@
-apiVersion: opa.k8smgmt.io/v3
-kind: Policy
-metadata:
-  name: pol
-  project: ankit
-spec: {}

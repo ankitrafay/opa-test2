@@ -1,0 +1,14 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: OPAPolicy
+metadata:
+  name: kns
+  project: defaultproject
+spec:
+  constraintList:
+  - name: proc-mount
+  - name: host-network-ports
+  installationParams:
+    auditMatchKindOnly: true
+  sharing:
+    enabled: false
+  version: v1
