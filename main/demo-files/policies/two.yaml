@@ -1,0 +1,16 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Policy
+metadata:
+  name: two
+  project: ankit
+spec:
+  constraintList:
+  - name: one
+  - name: two
+  - name: host-network-ports
+  - name: host-namespace
+  - name: seccomp
+  installationParams: {}
+  sharing:
+    enabled: false
+  version: v1
