@@ -1,14 +1,19 @@
 apiVersion: opa.k8smgmt.io/v3
 kind: OPAPolicy
 metadata:
-  name: kns
+  name: one
   project: defaultproject
 spec:
   constraintList:
-  - name: proc-mount
+  - name: one
   - name: host-network-ports
+  - name: host-namespace
+  - name: seccomp
+  - name: host-filesystem
   installationParams:
+    auditInterval: 60
     auditMatchKindOnly: true
+    constraintViolationsLimit: 20
   sharing:
     enabled: false
-  version: v1
+  version: v23

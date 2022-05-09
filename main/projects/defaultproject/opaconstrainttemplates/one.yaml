@@ -7,6 +7,8 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/one/request-limit-ratio-constraint-template.yaml
     options: {}
     type: Yaml

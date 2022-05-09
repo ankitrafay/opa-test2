@@ -3,13 +3,13 @@ kind: OPAConstraint
 metadata:
   labels:
     rafay.dev/opa: constraint
-  name: one
+  name: two
   project: defaultproject
 spec:
   artifact:
     artifact:
       paths:
-      - name: file://artifacts/one/request-limit-ratio-constraint.yaml
+      - name: file://artifacts/two/gatekeeper-allowedrepos-policy-constraint.yaml
     options: {}
     type: Yaml
-  templateName: one
+  templateName: two

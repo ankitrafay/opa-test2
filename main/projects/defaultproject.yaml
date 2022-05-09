@@ -3,4 +3,4 @@ kind: Project
 metadata:
   name: defaultproject
 spec:
-  default: true
+  default: false

@@ -3,12 +3,10 @@ kind: OPAConstraintTemplate
 metadata:
   labels:
     rafay.dev/opa: template
-  name: two
+  name: wdefsd
   project: defaultproject
 spec:
   artifact:
-    artifact:
-      paths:
-      - name: file://artifacts/two/gatekeeper-allowedrepos-constraint-template-regex.yaml
+    artifact: {}
     options: {}
     type: Yaml

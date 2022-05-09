@@ -1,0 +1,13 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: OPAPolicy
+metadata:
+  name: test
+  project: defaultproject
+spec:
+  constraintList:
+  - name: allow-privilege-escalation-container
+  - name: forbidden-sysctls
+  installationParams: {}
+  sharing:
+    enabled: false
+  version: v1
