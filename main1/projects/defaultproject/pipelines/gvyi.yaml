@@ -1,0 +1,34 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: gvyi
+  project: defaultproject
+spec:
+  active: true
+  sharing:
+    enabled: false
+  stages:
+  - config:
+      destinationRepo: {}
+      gitToSystemSync: true
+      includedResources:
+      - name: '*'
+      sourceAsDestination: true
+      sourceRepo:
+        path:
+          name: main1
+        repository: opa
+        revision: main
+      systemToGitSync: true
+    name: test
+    type: SystemSync
+  triggers:
+  - config:
+      repo:
+        paths:
+        - name: main
+        provider: Github
+        repository: opa
+        revision: main
+    name: one
+    type: Webhook

@@ -1,0 +1,13 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: ca
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    options: {}
+    type: Yaml
+  namespace: caw
+  sharing:
+    enabled: false
