@@ -4,5 +4,8 @@ metadata:
   name: tim
   project: defaultproject
 spec:
+  agents:
+  - name: tim-opa
+  endpoint: https://github.com/timrafay/opa-gatekeeper.git
   options: {}
   type: Git
