@@ -1,7 +1,7 @@
 apiVersion: opa.k8smgmt.io/v3
 kind: OPAPolicy
 metadata:
-  name: BP-ALL
+  name: bp-all
   project: defaultproject
 spec:
   constraintList:
