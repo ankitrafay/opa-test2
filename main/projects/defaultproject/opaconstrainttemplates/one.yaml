@@ -9,6 +9,6 @@ spec:
   artifact:
     artifact:
       paths:
-      - name: file://artifacts/one/request-limit-ratio-constraint-template.yaml
+      - name: file://artifacts/one/template.yaml
     options: {}
     type: Yaml
