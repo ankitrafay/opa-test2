@@ -7,7 +7,9 @@ spec:
   constraintList:
   - name: allow-privilege-escalation-container
   - name: forbidden-sysctls
+  - name: one
+  - name: two
   installationParams: {}
   sharing:
     enabled: false
-  version: v1
+  version: v1sd
