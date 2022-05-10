@@ -1,0 +1,16 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: opa
+  project: defaultproject
+spec:
+  agents:
+  - name: opa
+  credentials:
+    password: sealed://credentials.password
+    username: ankit@rafay.co
+  endpoint: https://github.com/ankitrafay/opa-test2.git
+  options: {}
+  secret:
+    name: file://artifacts/opa/sealed-secret.yaml
+  type: Git
