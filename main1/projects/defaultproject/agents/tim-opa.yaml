@@ -1,0 +1,10 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: tim-opa
+  project: defaultproject
+spec:
+  active: true
+  cluster:
+    name: ankit-opa-fix
+  type: Cluster
