@@ -22,3 +22,13 @@ spec:
       systemToGitSync: true
     name: test
     type: SystemSync
+  triggers:
+  - config:
+      repo:
+        paths:
+        - name: main1
+        provider: Github
+        repository: opa
+        revision: main
+    name: test
+    type: Webhook
