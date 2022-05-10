@@ -26,9 +26,9 @@ spec:
   - config:
       repo:
         paths:
-        - name: main
+        - name: main1
         provider: Github
         repository: opa
         revision: main
-    name: one
+    name: test
     type: Webhook
